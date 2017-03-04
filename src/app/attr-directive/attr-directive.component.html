@@ -1,0 +1,33 @@
+<div class="ui raised segment">
+
+  <h1 class="ui header">My First Attribute Directive</h1>
+
+  <h4>Pick a highlight color</h4>
+
+  <div class="ui form">
+    <div class="inline fields">
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="colors" (click)="color='lightgreen'">
+          <label>Green</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="colors" (click)="color='yellow'">
+          <label>Yellow</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="colors" (click)="color='cyan'">
+          <label>Cyan</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="field" myHighlight [highlightColor]="color">Highlight me!</p>
+
+</div>
